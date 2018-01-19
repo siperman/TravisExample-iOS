@@ -18,8 +18,8 @@ after_success:
   - echo "---after_success"
   - ./scripts/sign-and-upload.sh
 env:
-  - echo "---env"
   global:
+  - echo "---env--global"
   - APP_NAME="TravisExample"
   - 'DEVELOPER_NAME="iPhone Distribution: Mattes Groeger"'
   - PROFILE_NAME="TravisExample_Ad_Hoc"
